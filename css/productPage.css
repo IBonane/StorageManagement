@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: montserrat;
+}
+
+.container{
+    position: absolute;
+    margin: 20px;
+    width: 100%;
+}
+
+label{
+    width: 30%;
+}
+
+.productForm{
+    max-width: 550px;
+    margin: 0 auto;
+    background: whitesmoke;
+    padding: 20px;
+    line-height: 25px;
+}
+
+.inputField{
+    display: flex;
+    flex-direction: row;
+    margin-right: 5%;
+    margin-top: 20px;
+    line-height: 25px;
+    width: 100%;
+}
+
+.btn{
+    background-color: #0082e6;
+    align-items: center;
+    float: right;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-color: blue;
+}
+
+.btnFrom{
+    width: 100%;
+}
+
+.inputs{
+    width: 100%;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+}
+
+.required{
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.successMessage{
+    background: rgb(235, 154, 5);
+    width: 100%;
+    border-radius: 5px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}

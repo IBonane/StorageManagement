@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/productPage.css">
+    <title>product</title>
+</head>
+
+<body>
+
+    <!-- Navigation bar-->
+    <nav>
+        <label class="Logo" for="Logo">StoreManagement</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productlist.html">ProductList</a></li>
+            <li><a class="active" href="product.html">New Product</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!--Product page-->
+        <form onsubmit="saveProduct(this);return false" class="productForm">
+
+            <!--Success Message-->
+            <div id="SuccessMessage"></div>
+
+            <div class="wrapper">
+                <div class="inputs">
+                    <!--Product Id-->
+                    <div class="inputField">
+                        <label for="ProductId">Id:</label>
+                        <input name="ProductId" id="ProductId" type="text" disabled>
+                    </div>
+
+                    <!--Product Name-->
+                    <div class="inputField">
+                        <label for="ProductName">Name:</label>
+                        <input name="ProductName" id="ProductName" type="text">
+                        <span class="required">*</span>
+                    </div>
+                </div>
+                <!--Product Submit-->
+                <div class="btnFrom">
+                    <input type="submit" value="Save" class="btn">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <SCript src="js/product.js"></SCript>
+
+</body>
+
+</html>
