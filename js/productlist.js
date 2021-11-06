@@ -12,12 +12,15 @@ function showProducts(){
             <tr>
                 <td>${element.id}</td>
                 <td>${element.name}</td>
-                <td>${element.amount}</td>
-                <td><button>view</button></td>
+                <td>${element.storageAmount}</td>
+                <td><button onclick='navigate(${element.id})'>view</button></td>
             </tr>
         `)
 
         document.querySelector("#listTable").innerHTML = tableInfo;
-    });
-    
+    });  
+}
+
+function navigate(productId){
+    window.location.href='product.html?id='+productId;
 }

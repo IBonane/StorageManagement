@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/productPage.css">
+    <link rel="stylesheet" href="css/productlist.css">
     <title>product</title>
 </head>
 
@@ -24,7 +25,7 @@
 
     <div class="container">
         <!--Product page-->
-        <form onsubmit="saveProduct(this);return false" class="productForm">
+        <form class="productForm">
 
             <!--Success Message-->
             <div id="SuccessMessage"></div>
@@ -44,12 +45,28 @@
                         <span class="required">*</span>
                     </div>
                 </div>
-                <!--Product Submit-->
+                <!--Product Submit and TransactionProduct Submit-->
                 <div class="btnFrom">
-                    <input type="submit" value="Save" class="btn">
+                    <input onclick="saveProduct()" type="button" value="Save" class="btn">
+
+                    <br><br><br>
+                    <input type="button" value="Trans" class="btn modal-btn">
                 </div>
             </div>
         </form>
+        <div id="TableHolder"></div>
+    </div>
+
+    <div class="container">
+        <div class="modal-bg">
+            <div class="modal">
+                <h3>Transaction</h3>
+                <label for="amount">QTY :</label>
+                <input type="number" id="transactionQty" name="amount">
+                <button onclick="saveTransaction()">Add</button>
+                <span class="modal-close">X</span>
+            </div>
+        </div>
     </div>
 
     <SCript src="js/product.js"></SCript>
